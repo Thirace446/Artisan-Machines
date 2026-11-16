@@ -50,10 +50,7 @@ public class MachineBlockRenderer implements BlockEntityRenderer<AbstractMachine
             return;
 
         if (!blockEntity.isWorking())
-        {
-            poseStack.popPose();
             return;
-        }
 
         BlockPos pos = blockEntity.getBlockPos();
         poseStack.pushPose();
